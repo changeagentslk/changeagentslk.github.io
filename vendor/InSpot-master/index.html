@@ -1,0 +1,171 @@
+<html>
+
+<head>
+	<title>InSpot#place</title>
+	<meta charset="utf-8">
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<link href="/src/base.css" rel="stylesheet" />
+	<script type="text/javascript" src="/src/inspot.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+	<div id="top-bar">
+			<input type="image" id="logo" style="height:50px;width:auto;" src="/src/img/logo.png" />
+			<p id="inspotTag">#InSpot</p>
+			<p id="placeTag">#경복궁</p>
+			<input type="image" id="settingButton" style="height:24px;width:24px;" src="/src/img/btn-settings.png" />
+	</div>
+
+	<script src="instashow/jquery.instashow.packaged.js"></script>
+
+	<div id="firstGrid">
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="#경복궁"
+				data-is-filter-only="#InSpot"
+				data-is-cache-media-time="0"
+				data-is-width="370px"
+				data-is-height="370px"
+				data-is-columns="1"
+				data-is-rows="1"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-color-gallery-arrows-bg="0">
+		</div>
+
+		<div id="sentenceBlock">
+				인스타그램에 "
+				<strong class="sentence">InSpot</strong>" 과 "
+				<strong class="sentence">경복궁</strong>" 을
+				<strong class="sentence">태그</strong>해주세요.</br>
+				사진을 더 많은 사람들과 공유할 수 있습니다.
+		</div>
+	</div>
+
+	<div id="blank">
+			<p> </p>
+	</div>
+
+	<div id="secondGrid">
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="@hiiing"
+				data-is-filter-except="@inspothome"
+				data-is-cache-media-time="0"
+				data-is-width="240px"
+				data-is-height="auto"
+				data-is-effect="slide"
+				data-is-speed="600"
+				data-is-columns="2"
+				data-is-rows="2"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-info="none"
+				data-is-popup-info="none"
+				data-is-color-gallery-arrows-bg="0">
+		</div>
+
+		<div class="temper">
+
+			<p id="p_name">HEY</p>
+			<img src="src/img/clearsky.png" id=png height="64" width="64">
+
+			<p id="p_clouds">강수확률 50% </p>
+			<p id="p_temp">30℃</p>
+
+
+
+			<script>
+				var n_name = document.getElementById('p_name').firstChild;
+				var n_clouds = document.getElementById('p_clouds').firstChild;
+				var n_temp = document.getElementById('p_temp').firstChild;
+
+
+     				function getWeather() {
+        				var apiURI = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&APPID=e42202e66f1f003b5aa38a48f7ddbb87";
+        				var f_name;
+        				var f_temp;
+        				var f_weather;//날씨 값 지표 맑은날:800 반맑음:700번대 구름:800번대(800번제외) 비:200번대 300번대 500번대
+        				var f_clouds;
+        				$.ajax({
+          					url: apiURI ,        //요청하는 곳의 주소
+          					dataType: "json",    //리턴되어지는 데이터 타입
+          					type: "GET",
+										async: "false",
+          					success: function(forecast) {//값 가져오는데 성공시 실햄함  resp에는 리턴되어지는 데이터가 담겨있음
+            						f_name = forecast.name;
+            						f_temp=(forecast.main.temp-273.15).toFixed(0);
+	      	    					f_weather=forecast.weather[0].id;
+	       	   					f_clouds=forecast.clouds.all;
+	         					//alert("weather");
+							n_name.replaceData(0,10,f_name);
+							n_clouds.replaceData(5,2,f_clouds);
+							n_temp.replaceData(0,2,f_temp);
+							if(f_weather==800){document.getElementById('png').src="src/img/clearsky.png";}
+							else if(700<=f_weather<800){document.getElementById('png').src="src/img/fewclouds.png";}
+							else if(800<f_weather<900){document.getElementById('png').src="src/img/clouds.png";}
+							else {document.getElementById('png').src="src/img/rain.png";}
+
+	         				},
+          					error: function(forecast) {
+            						alert("Error: " + e);
+            						clearInterval(updateinter);
+          					}
+
+        				});
+      				}
+				getWeather();
+			</script>
+
+
+		</div>
+
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="@yooj_kel"
+				data-is-filter-except="@inspothome"
+				data-is-cache-media-time="0"
+				data-is-width="240px"
+				data-is-height="auto"
+				data-is-effect="slide"
+				data-is-speed="600"
+				data-is-columns="2"
+				data-is-rows="1"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-info="none"
+				data-is-popup-info="none"
+				data-is-color-gallery-arrows-bg="0">
+		</div>
+	</div>
+
+	<div id="thirdGrid">
+		<div class="current-time">
+			<p id="currentYear"></p>
+			<p id="currentMonth"></p>
+			<p id="currentDate"></p>
+			<p id="currentDay"></p>
+			<p id="currentHHMM"></p>
+		</div>
+
+		<div data-is data-is-api="/instashow/api/"
+				data-is-source="@jjy920517"
+				data-is-filter-except="#inspot"
+				data-is-cache-media-time="0"
+				data-is-width="123px"
+				data-is-height="246px"
+				data-is-effect="slide"
+				data-is-speed="600"
+				data-is-columns="1"
+				data-is-rows="2"
+				data-is-direction="horizontal"
+				data-is-lang="ko"
+				data-is-info="none"
+				data-is-popup-info="none"
+				data-is-color-gallery-arrows-bg="0">
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

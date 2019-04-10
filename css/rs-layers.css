@@ -1,0 +1,38 @@
+.caption-highlight {
+    color: #ef483a;
+}
+.tp-caption.Agency-Title,
+.Agency-Title {
+    color: #000;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 900;
+    font-style: normal;
+    font-family: lato;
+    padding: 0 0 0 0px;text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0 0 0 0px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.tp-caption.Agency-SubTitle,
+.Agency-SubTitle {
+    color: #000;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: Georgia, serif;
+    padding: 0 0 0 0px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0 0 0 0px;
+    text-align: center
+}

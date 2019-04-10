@@ -1,0 +1,174 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 30px;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 300;
+}
+p {
+    font-size: 13px;
+    line-height: 3px;
+}
+a.no-uline { text-decoration:none }
+
+.sentence {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #f7fb8c;
+    -webkit-text-stroke-color: #f7fb8c;
+    -webkit-text-stroke-width: 0;
+}
+.temper {
+    width: 240px;
+    height: 68px;
+    background-color: #47568f;
+}
+.current-time {
+    float: left;
+    width: 123px;
+    height: 185px;
+    background-color: #c5d5f1;
+}
+#logo {
+    float: left;
+    margin-top: 4px;
+    margin-left: 31px;
+}
+#inspotTag {
+    float: left;
+    margin-left: 70px;
+    margin-top: 11px;
+    padding-top: 10px;
+    width: 85px;
+    height: 13px;
+    border-radius: 12px;
+    border: solid 2px #418cff;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #fffffe;
+}
+#placeTag {
+    float: left;
+    margin-left: 10px;
+    margin-top: 11px;
+    padding-top: 10px;
+    width: 85px;
+    height: 13px;
+    border-radius: 12px;
+    border: solid 2px #418cff;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #fffffe;
+}
+#settingButton {
+    float: right;
+    margin-right: 50px;
+    margin-top: 13px;
+}
+
+/* */
+
+#top-bar {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    width: 800px;
+    height: 50px;
+    background-color: #393948;
+}
+#firstGrid {
+    float: left;
+    margin-left: 30px;
+}
+#sentenceBlock {
+    width: 370px;
+    height: 47px;
+    margin-top: 0;
+    padding-top: 12px;
+    background-color: #524db0;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    line-height: 16px;
+}
+#blank {
+    float: left;
+    border-right: solid 1px #ffffff;
+}
+#secondGrid {
+    float: left;
+}
+#thirdGrid {
+    /*float: left;*/
+}
+#currentYear {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 20px;
+}
+#currentMonth {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b3464;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 5px;
+}
+#currentDate {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 51px;
+}
+#currentDay {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 5px;
+}
+#currentHHMM {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 10px;
+}
+#p_name {
+    color: #ffffff;
+    float: left;
+    font-size: 13px;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+#p_temp {
+    color: #ffffff;
+    float: right;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+#p_clouds {
+    color: #ffffff;
+    float: left;
+    padding: 10px;
+    margin-top: 32px;
+    margin-left: -45px;
+}

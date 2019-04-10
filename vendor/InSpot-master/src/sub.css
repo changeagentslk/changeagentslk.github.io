@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-size: 30px;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 300;
+}
+p {
+    font-size: 13px;
+    line-height: 3px;
+}
+#top-bar2 {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 800px;
+  height: 50px;
+  background-color: #393948;
+}
+#logo2 {
+    float: left;
+    margin-top: 4px;
+    margin-left: 31px;
+}
+#settingButton2 {
+    float: right;
+    margin-right: 50px;
+    margin-top: 13px;
+}
+
+#placeWord {
+  margin-left: 145px;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 100;
+  color: #303030;
+  -webkit-text-stroke-color: #303030;
+  -webkit-text-stroke-width: 1;
+}
+.placeContents {
+  margin-left: 150px;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+#homeWord {
+  margin-left: 145px;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 100;
+  color: #303030;
+  -webkit-text-stroke-color: #303030;
+  -webkit-text-stroke-width: 1;
+}
+.homeContents {
+  margin-top: 0;
+  margin-left: 150px;
+}
+
+#inspotPlace {
+  width: 300px;
+  height: 50px;
+  border-radius: 12px;
+  border: solid 2px #418cff;
+  font-size: 16px;
+  font-weight: 100;
+  padding-left: 20px;
+}
+#inspotHome {
+  width: 300px;
+  height: 50px;
+  border-radius: 12px;
+  border: solid 2px #418cff;
+  font-size: 16px;
+  font-weight: 100;
+  padding-left: 20px;
+}
+#button1 {
+  margin-top: 30px;
+  width: 30px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #7589d3;
+  color : #ffffff;
+}
+#button2 {
+  margin-top: 30px;
+  width: 30px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #7589d3;
+  color : #ffffff;
+}
+#bold {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7589d3;
+  -webkit-text-stroke-color: #7589d3;
+  -webkit-text-stroke-width: 1;
+}

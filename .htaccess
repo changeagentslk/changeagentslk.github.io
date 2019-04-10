@@ -1,0 +1,11 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^register$ "https\:\/\/www\.eventbrite\.com\/e\/change\-agents\-episode\-tickets\-8329546899" [R=301,L]
+RewriteCond %{HTTP_HOST} ^changeagents\.lk$
+RewriteRule ^/?$ "https\:\/\/www\.facebook\.com\/events\/2215452125338452\/" [R=301,L]
+
